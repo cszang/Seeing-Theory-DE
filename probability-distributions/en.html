@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,14 +10,14 @@
     <!-- For Facebook Sharing -->
     <meta property="og:url" content="http://students.brown.edu/seeing-theory/probability-distributions" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Wahrscheinlichkeitsverteilungen" />
-    <meta property="og:description" content="Eine Wahrscheinlichkeitsverteilung gibt die relativen Wahrscheinlichkeiten aller möglichen Ergebnisse an." />
+    <meta property="og:title" content="Probability Distributions" />
+    <meta property="og:description" content="A probability distribution specifies the relative likelihoods of all possible outcomes." />
     <meta property="og:image" content="http://students.brown.edu/seeing-theory/img/share/3.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
 
-    <title>Seeing Theory - Wahrscheinlichkeitsverteilungen</title>
+    <title>Seeing Theory - Probability Distributions</title>
     <!-- CSS Imports -->
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
@@ -79,8 +79,8 @@
                 <li>
                     <span onclick="openNav()" id="hamburger">&#9776; </span>
                 </li>
-                <li><a href="../index.html" id="seeing-theory">Seeing Theory</a></li>
-                <li><a onclick='toTop()' id='display-chapter'>Kapitel 3: Wahrscheinlichkeitsverteilungen</a></li>
+                <li><a href="../en.html" id="seeing-theory">Seeing Theory</a></li>
+                <li><a onclick='toTop()' id='display-chapter'>Chapter 3: Probability Distributions</a></li>
             </ul>
         </div>
     </div>
@@ -88,25 +88,25 @@
         <div class="col-left-wrapper">
             <div id="section0">
                 <div class="chapter-intro">
-                    <h4>Kapitel 3</h4>
-                    <h1>Wahrscheinlichkeitsverteilungen</h1>
-                    <p>Eine Wahrscheinlichkeitsverteilung gibt die relativen Wahrscheinlichkeiten aller möglichen Ergebnisse an.
+                    <h4>Chapter 3</h4>
+                    <h1>Probability Distributions</h1>
+                    <p>A probability distribution specifies the relative likelihoods of all possible outcomes.
                     </p>
                 </div>
                 <div class="scroll-down"> <img src="../img/button/bottom-arrow.svg"></div>
             </div>
             <div id="section1">
                 <div class="unit">
-                    <h3>Zufallsvariablen</h3>
-                    <p>Formal ist eine Zufallsvariable eine Funktion, die jedem Ergebnis im Wahrscheinlichkeitsraum eine reelle Zahl zuordnet. Definiere rechts deine eigene diskrete Zufallsvariable auf dem gleichverteilten Wahrscheinlichkeitsraum und ziehe Stichproben, um die empirische Verteilung zu bestimmen.</p>
-                    <p>Klicke und ziehe, um Bereiche des Wahrscheinlichkeitsraums auszuwählen, wähle eine reelle Zahl als Wert und klicke dann auf „Absenden“.</p>
+                    <h3>Random Variables</h3>
+                    <p>Formally, a random variable is a function that assigns a real number to each outcome in the probability space. Define your own discrete random variable for the uniform probability space on the right and sample to find the empirical distribution.</p>
+                    <p>Click and drag to select sections of the probability space, choose a real number value, then press "Submit."</p>
                     <div class="interactive-wrapper">
                         <form id="rvNewMap">
                             <div class="form-group-inline">
-                                <input type="number" step="any" class="form-control" placeholder="Wert" id="mapValue" required>
+                                <input type="number" step="any" class="form-control" placeholder="value" id="mapValue" required>
                             </div>
                             <div class="form-group-inline">
-                                <input type="submit" class="button-1" value="Absenden"></input>
+                                <input type="submit" class="button-1" value="Submit"></input>
                             </div>
                         </form>
                     </div>
@@ -116,8 +116,8 @@
                             <colgroup></colgroup>
                             <tbody>
                                 <tr>
-                                    <td>Farbe</td>
-                                    <td>Wert</td>
+                                    <td>Color</td>
+                                    <td>Value</td>
                                 </tr>
                                 <tr>
                                     <td><img src="./img/hexagon.svg" width="20px" /></td>
@@ -126,67 +126,67 @@
                             </tbody>
                         </table>
                     </div>
-                    <p>Ziehe Stichproben aus dem Wahrscheinlichkeitsraum, um die empirische Verteilung deiner Zufallsvariable zu erzeugen.</p>
+                    <p>Sample from probability space to generate the empirical distribution of your random variable.</p>
                     <div class="interactive-wrapper">
                     <div id="rvDist"></div>
-                    <div class="button-1 sampleBtns" id="startRV">Stichproben ziehen</div>
-                    <div class="button-1" id="resetRV">Zurücksetzen</div>
+                    <div class="button-1 sampleBtns" id="startRV">Sample Distribution</div>
+                    <div class="button-1" id="resetRV">Reset</div>
                     </div>
                 </div>
             </div>
             <div id="section2">
                 <div class="unit">
-                    <h3>Diskret und stetig</h3>
+                    <h3>Discrete and Continuous</h3>
                     <p>
-                        Es gibt zwei große Klassen von Wahrscheinlichkeitsverteilungen.
+                        There are two major classes of probability distributions.
                     </p>
                     <div class="interactive-wrapper slider-align">
-                        <label class="radio-inline">Diskret
+                        <label class="radio-inline">Discrete
                             <input type="radio" name="distributions" value="discrete" checked=true>
                             <span class="checkmark"></span>
                         </label>
-                        <label class="radio-inline">Stetig
+                        <label class="radio-inline">Continuous
                             <input type="radio" name="distributions" value="continuous">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="definition">
-                        <p>Eine diskrete Zufallsvariable hat endlich viele oder abzählbar unendlich viele mögliche Werte.</p> 
+                        <p>A discrete random variable has a finite or countable number of possible values.</p> 
 
-                        <p>Ist \( X \) eine diskrete Zufallsvariable, dann gibt es eindeutige nichtnegative Funktionen \( f(x) \) und \( F(x) \), für die Folgendes gilt:</p>
+                        <p>If \( X \) is a discrete random variable, then there exists unique nonnegative functions, \( f(x) \) and \( F(x) \), such that the following are true:</p>
 
                         $$\begin{align*}P(X = x) &= f(x)\\P(X < x) &= F(x)\end{align*}$$
 
-                        <p>Wähle eine der folgenden wichtigen diskreten Verteilungen zur Visualisierung aus. Die Wahrscheinlichkeitsfunktion \( f(x) \) wird in <span class="yellow-color">Gelb</span> und die Verteilungsfunktion \( F(x) \) in <span class="orange-color">Orange</span> dargestellt (gesteuert über den Schieberegler).</p>
+                        <p>Choose one of the following major discrete distributions to visualize. The probability mass function \( f(x) \) is shown in <span class="yellow-color">yellow</span> and the cumulative distribution function \( F(x) \) in <span class="orange-color">orange</span> (controlled by the slider).</p>
                         <div class="interactive-wrapper">
                             <select class="distributions st-dropdown">
-                                <option disabled selected value> -- Verteilung auswählen -- </option>
+                                <option disabled selected value> -- select a distribution -- </option>
                                 <option value="bernoulli">Bernoulli</option>
                                 <option value="binomialDiscrete">Binomial</option>
-                                <option value="geometric">Geometrisch</option>
+                                <option value="geometric">Geometric</option>
                                 <option value="poisson">Poisson</option>
-                                <option value="negbin">Negativ binomial</option>
+                                <option value="negbin">Negative Binomial</option>
                             </select>
                         </div>
                     </div>
                     <div class="definition" style="display:none">
-                        <p>Eine stetige Zufallsvariable nimmt überabzählbar unendlich viele mögliche Werte an (z. B. alle reellen Zahlen).</p>
+                        <p>A continuous random variable takes on an uncountably infinite number of possible values (e.g. all real numbers).</p>
 
-                        <p>Ist \( X \) eine stetige Zufallsvariable, dann gibt es eindeutige nichtnegative Funktionen \( f(x) \) und \( F(x) \), für die Folgendes gilt:</p>
+                        <p>If \( X \) is a continuous random variable, then there exists unique nonnegative functions, \( f(x) \) and \( F(x) \), such that the following are true:</p>
 
                         $$\begin{align*}P(a\leq X\leq b) &=\int^b_a f(x) dx\\P(X < x) &= F(x)\end{align*}$$
 
-                        <p>Wähle eine der folgenden wichtigen stetigen Verteilungen zur Visualisierung aus. Die Wahrscheinlichkeitsdichtefunktion \( f(x) \) wird in <span class="yellow-color">Gelb</span> und die Verteilungsfunktion \( F(x) \) in <span class="orange-color">Orange</span> dargestellt (gesteuert über den Schieberegler).</p>
+                        <p>Choose one of the following major continuous distributions to visualize. The probability density function \( f(x) \) is shown in <span class="yellow-color">yellow</span> and the cumulative distribution function \( F(x) \) in <span class="orange-color">orange</span> (controlled by the slider).</p>
                         <p></p>
 
                         <div class="interactive-wrapper">
                             <select class="distributions st-dropdown">
-                                <option disabled selected> -- Verteilung auswählen -- </option>
-                                <option value="uniform">Gleichverteilung</option>
-                                <option value="normal">Normalverteilung</option>
-                                <option value="studentt">Student-t</option>
-                                <option value="chisquare">Chi-Quadrat</option>
-                                <option value="exponential">Exponentialverteilung</option>
+                                <option disabled selected> -- select a distribution -- </option>
+                                <option value="uniform">Uniform</option>
+                                <option value="normal">Normal</option>
+                                <option value="studentt">Student T</option>
+                                <option value="chisquare">Chi Squared</option>
+                                <option value="exponential">Exponential</option>
                                 <option value="centralF">F</option>
                                 <option value="gamma">Gamma</option>
                                 <option value="beta">Beta</option>
@@ -195,43 +195,43 @@
                     </div>
                     <br>
                     <div id="bernoulli" class="bernoulli distribution">
-                        <p>Eine Bernoulli-verteilte Zufallsvariable nimmt den Wert 1 mit Wahrscheinlichkeit \(p\) und den Wert 0 mit Wahrscheinlichkeit \(1-p\) an. Sie wird häufig verwendet, um binäre Experimente wie einen Münzwurf darzustellen.</p>
+                        <p>A Bernoulli random variable takes the value 1 with probability of \(p\) and the value 0 with probability of \(1-p\). It is frequently used to represent binary experiments, such as a coin toss.</p>
                     </div>
                     <div id="binomialDiscrete" class="binomialDiscrete distribution">
-                        <p>Eine binomialverteilte Zufallsvariable ist die Summe von \(n\) unabhängigen Bernoulli-Zufallsvariablen mit Parameter \(p\). Sie wird häufig verwendet, um die Anzahl der Erfolge bei einer festgelegten Anzahl identischer binärer Experimente zu modellieren, etwa die Anzahl von Kopf bei fünf Münzwürfen.</p>
+                        <p>A binomial random variable is the sum of \(n\) independent Bernoulli random variables with parameter \(p\). It is frequently used to model the number of successes in a specified number of identical binary experiments, such as the number of heads in five coin tosses.</p>
                     </div>
                     <div id="negbin" class="negbin distribution">
-                        <p>Eine negativ binomialverteilte Zufallsvariable zählt die Erfolge in einer Folge unabhängiger Bernoulli-Versuche mit Parameter \(p\), bevor \(r\) Misserfolge eingetreten sind. Mit dieser Verteilung lässt sich zum Beispiel modellieren, wie oft Kopf fällt, bevor in einer Folge von Münzwürfen dreimal Zahl beobachtet wird.</p>
+                        <p>A negative binomial random variable counts the number of successes in a sequence of independent Bernoulli trials with parameter \(p\) before \(r\) failures occur. For example, this distribution could be used to model the number of heads that are flipped before three tails are observed in a sequence of coin tosses.</p>
                     </div>
                     <div id="geometric" class="geometric distribution">
-                        <p>Eine geometrisch verteilte Zufallsvariable zählt die Versuche, die nötig sind, um einen ersten Erfolg zu beobachten, wobei jeder Versuch unabhängig ist und die Erfolgswahrscheinlichkeit \(p\) hat. Mit dieser Verteilung lässt sich zum Beispiel modellieren, wie oft man würfeln muss, bis eine Sechs fällt.</p>
+                        <p>A geometric random variable counts the number of trials that are required to observe a single success, where each trial is independent and has success probability \(p\). For example, this distribution can be used to model the number of times a die must be rolled in order for a six to be observed.</p>
                     </div>
                     <div id="poisson" class="poisson distribution">
-                        <p>Eine Poisson-verteilte Zufallsvariable zählt die Ereignisse in einem festen Zeit- oder Raumintervall, wenn diese Ereignisse mit einer durchschnittlichen Rate \(\lambda\) auftreten. Diese Verteilung wurde verwendet, um Ereignisse wie Meteoritenschauer oder Tore in einem Fußballspiel zu modellieren.</p>
+                        <p>A Poisson random variable counts the number of events occurring in a fixed interval of time or space, given that these events occur with an average rate \(\lambda\). This distribution has been used to model events such as meteor showers and goals in a soccer match.</p>
                     </div>
                     <div id="uniform" class="uniform distribution">
-                        <p>Die Gleichverteilung ist eine stetige Verteilung, bei der alle Intervalle gleicher Länge innerhalb des Trägers der Verteilung dieselbe Wahrscheinlichkeit haben. Damit könnte man zum Beispiel vollständige Geburtszeitpunkte von Menschen modellieren, wobei angenommen wird, dass alle Zeitpunkte im Kalenderjahr gleich wahrscheinlich sind.</p>
+                        <p>The uniform distribution is a continuous distribution such that all intervals of equal length on the distribution's support have equal probability. For example, this distribution might be used to model people's full birth dates, where it is assumed that all times in the calendar year are equally likely.</p>
                     </div>
                     <div id="normal" class="normal distribution">
-                        <p>Die Normalverteilung (oder Gauß-Verteilung) hat eine glockenförmige Dichtefunktion und wird in den Wissenschaften verwendet, um reellwertige Zufallsvariablen darzustellen, von denen man annimmt, dass sie additiv aus vielen kleinen Effekten entstehen. So wird die Normalverteilung zum Beispiel zur Modellierung der Körpergröße von Menschen genutzt, da man annehmen kann, dass die Größe das Ergebnis vieler kleiner genetischer und umweltbedingter Faktoren ist.</p>
+                        <p>The normal (or Gaussian) distribution has a bell-shaped density function and is used in the sciences to represent real-valued random variables that are assumed to be additively produced by many small effects. For example the normal distribution is used to model people's height, since height can be assumed to be the result of many small genetic and evironmental factors.</p>
                     </div>
                     <div id="studentt" class="studentt distribution">
-                        <p>Die Student-t-Verteilung, kurz t-Verteilung, tritt auf, wenn der Mittelwert einer normalverteilten Grundgesamtheit geschätzt wird, die Stichprobe klein ist und die Standardabweichung der Grundgesamtheit unbekannt ist.</p>
+                        <p>Student's t-distribution, or simply the t-distribution, arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.</p>
                     </div>
                     <div id="chisquare" class="chisquare distribution">
-                        <p>Eine Chi-Quadrat-verteilte Zufallsvariable mit \(k\) Freiheitsgraden ist die Summe von \(k\) unabhängigen, identisch verteilten quadrierten standardnormalverteilten Zufallsvariablen. Sie wird häufig bei Hypothesentests und bei der Konstruktion von <a href="../frequentist-inference/index.html#section2">Konfidenzintervallen</a> verwendet.</p>
+                        <p>A chi-squared random variable with \(k\) degrees of freedom is the sum of \(k\) independent and identically distributed squared standard normal random variables. It is often used in hypothesis testing and in the construction of <a href="../frequentist-inference/en.html#section2">confidence intervals</a>.</p>
                     </div>
                     <div id="exponential" class="exponential distribution">
-                        <p>Die Exponentialverteilung ist das stetige Analogon zur geometrischen Verteilung. Sie wird häufig zur Modellierung von Wartezeiten verwendet.</p>
+                        <p>The exponential distribution is the continuous analogue of the geometric distribution. It is often used to model waiting times.</p>
                     </div>
                     <div id="centralF" class="centralF distribution">
-                        <p>Die F-Verteilung, auch Fisher-Snedecor-Verteilung genannt, tritt häufig als Nullverteilung einer Teststatistik auf, vor allem in der <a href="../regression-analysis/index.html#section3">Varianzanalyse</a>.</p>
+                        <p>The F-distribution, also known as the Fisher–Snedecor distribution, arises frequently as the null distribution of a test statistic, most notably in the <a href="../regression-analysis/en.html#section3">analysis of variance</a>.</p>
                     </div>
                     <div id="gamma" class="gamma distribution">
-                        <p>Die Gamma-Verteilung ist eine allgemeine Familie stetiger Wahrscheinlichkeitsverteilungen. Die Exponential- und die Chi-Quadrat-Verteilung sind Spezialfälle der Gamma-Verteilung.</p>
+                        <p>The gamma distribution is a general family of continuous probability distributions. The exponential and chi-squared distributions are special cases of the gamma distribution.</p>
                     </div>
                     <div id="beta" class="beta distribution">
-                        <p>Die Beta-Verteilung ist eine allgemeine Familie stetiger Wahrscheinlichkeitsverteilungen auf dem Intervall zwischen 0 und 1. In der Bayes'schen Statistik wird sie häufig als konjugierte A-priori-Verteilung verwendet.</p>
+                        <p>The beta distribution is a general family of continuous probability distributions bound between 0 and 1. The beta distribution is frequently used as a conjugate prior distribution in Bayesian statistics.</p>
                     </div>
                      </br>
                     <div class="interactive-wrapper">
@@ -243,11 +243,11 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <span class="definition">Wahrscheinlichkeitsfunktion</span>
-                                        <span class="definition" style="display:none">Verteilung</span>
+                                        <span class="definition">PMF</span>
+                                        <span class="definition" style="display:none">Distribution</span>
                                     </td>
-                                    <td>Erwartungswert</td>
-                                    <td>Varianz</td>
+                                    <td>Mean</td>
+                                    <td>Variance</td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -420,15 +420,15 @@
                             </div>
                             
                         </div></div>
-                        <div class="button-1" id="resetDist" style="display:none">Zurücksetzen</div>
+                        <div class="button-1" id="resetDist" style="display:none">Reset</div>
                     </div>
                 </div>
             </div>
             <div id="section3">
                 <div class="unit">
-                    <h3>Zentraler Grenzwertsatz</h3>
-                    <p>Der Zentrale Grenzwertsatz (ZGWS) besagt, dass der Stichprobenmittelwert einer hinreichend großen Anzahl unabhängiger, identisch verteilter Zufallsvariablen näherungsweise normalverteilt ist. Je größer die Stichprobe, desto besser ist die Näherung.</p>
-                    <p> Ändere die Parameter \(\alpha\) und \(\beta\), um die Verteilung zu verändern, aus der die Stichproben gezogen werden.</p>
+                    <h3>Central Limit Theorem</h3>
+                    <p>The Central Limit Theorem (CLT) states that the sample mean of a sufficiently large number of i.i.d. random variables is approximately normally distributed. The larger the sample, the better the approximation.</p>
+                    <p> Change the parameters \(\alpha\) and \(\beta\) to change the distribution from which to sample.</p>
                     <div class="interactive-wrapper">
                         <label for="alpha_clt">
                             \(\large \alpha\) = <span id="alpha_clt-value">1.00</span>
@@ -441,50 +441,50 @@
                         <input id="beta_clt" class="inputDist blueSlider" type="range" min="0.1" max="5" step="0.01" value="1.00">
 
                     </div>
-                    <p> Wähle den Stichprobenumfang und die Anzahl der zu berechnenden Stichprobenmittelwerte (Anzahl der Ziehungen) und klicke dann auf „Stichprobe ziehen“. Setze den Haken, um die wahre Verteilung des Stichprobenmittelwerts anzuzeigen.</p>
+                    <p> Choose the sample size and how many sample means should be computed (draw number), then press "Sample." Check the box to display the true distribution of the sample mean.</p>
                     <div class="interactive-wrapper">
                         <label for="sample">
-                            Stichprobenumfang = <span id="sample-value">1</span>
+                            Sample size = <span id="sample-value">1</span>
                         </label>
                         <input id="sample" class="inputDist greenSlider" type="range" min="1" max="15" step="1" value="1">
                         <br>
                         <label for="draws">
-                            Ziehungen = <span id="draws-value">1</span>
+                            Draws = <span id="draws-value">1</span>
                         </label>
                         <input id="draws" class="inputDist greenSlider" type="range" min="1" max="50" step="1" value="1">
                         
                         <div class="form-group" >
-                            <label class="form-check">Theoretisch
+                            <label class="form-check">Theoretical
                                 <input class="form-check-input" id="theoretical" type="checkbox">
                                 <span class="checkbox-mark"></span>
                             </label>
                         </div>
                         
-                        <div class="button-1"  id="form_clt">Stichprobe ziehen</div>
+                        <div class="button-1"  id="form_clt">Sample</div>
                     </div>
-                    <p>Diese Visualisierung wurde aus Philipp Plewas fantastischer Visualisierung des <a href="https://bl.ocks.org/pmplewa/4120c2929ede7e336d9b55b760e496f6">Zentralen Grenzwertsatzes</a> adaptiert.</p>
+                    <p>This visualization was adapted from Philipp Plewa's fantastic visualization of the <a href="https://bl.ocks.org/pmplewa/4120c2929ede7e336d9b55b760e496f6">central limit theorem</a>.</p>
                 </div>
             </div>
         </div>
         <div class="action-buttons">
             <ul>
                 <a href="../doc/probability-distributions.pdf">
-                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Herunterladen</span></li>
+                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Download</span></li>
                 </a>
                 <a id="share-button" class="inline-share">
 
-                    <li><i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Teilen</li>
+                    <li><i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Share</li>
                     <li><div id="share"></div></li>
                     <li><div id="share-modal"></div></li>
 
                 </a>
             </ul>
         </div>
-        <a href="../frequentist-inference/index.html">
+        <a href="../frequentist-inference/en.html">
             <div class="chapter-footer" id="next-chapter-color">
                 <div class="chapter-footer-wrapper">
-                    <h4>Weiter</h4>
-                    <p id='next-chapter'>Frequentistische Inferenz → </p>
+                    <h4>Next</h4>
+                    <p id='next-chapter'>Frequentist Inference → </p>
                 </div>
             </div>
         </a>
@@ -492,8 +492,8 @@
     <div class="col-right">
         <div class='language-setting'>
             <select class="languageSetting">
-                <option selected>Deutsch</option>
-                <option data-url="en.html">English</option>
+                <option selected>English</option>
+                <option data-url="index.html">Deutsch</option>
                 <option data-url="cn.html">中文</option>
                 <option data-url="es.html">Español</option>
             </select>
@@ -501,15 +501,15 @@
         <div class="nav-section" id="section-0">
             <div class="nav-unit-wrapper" id='one'>
                 <img src="../img/tiles/3-1.png">
-                <span class="nav-unit-title"> Zufallsvariable </span>
+                <span class="nav-unit-title"> Random Variable </span>
             </div>
             <div class="nav-unit-wrapper" id='two'>
                 <img src="../img/tiles/3-2.png">
-                <span class="nav-unit-title"> Diskret und stetig </span>
+                <span class="nav-unit-title"> Discrete and Continuous </span>
             </div>
             <div class="nav-unit-wrapper" id='three'>
                 <img src="../img/tiles/3-3.png">
-                <span class="nav-unit-title"> Zentraler Grenzwertsatz </span>
+                <span class="nav-unit-title"> Central Limit Theorem </span>
             </div>
         </div>
         <div class="visualization-section" id="section-1">
@@ -528,110 +528,110 @@
             <ul>
                 <li>
                     <select class="languageSetting">
-                        <option selected>Deutsch</option>
-                        <option data-url="en.html">English</option>
+                        <option selected>English</option>
+                        <option data-url="index.html">Deutsch</option>
                         <option data-url="cn.html">中文</option>
                         <option data-url="es.html">Español</option>
                     </select>
                 </li>
-                <li><a href="../index.html">STARTSEITE</a></li>
+                <li><a href="../en.html">HOME</a></li>
             </ul>
         </div>
         <div class="modal-wrapper">
             <div class="modal-chapter">
-                <div id="chapter-text"><span>KAPITEL</span></div>
+                <div id="chapter-text"><span>CHAPTER</span></div>
                 <ul class="modal-chapter-titles">
-                    <li id="bp-li">Grundlagen der Wahrscheinlichkeit</li>
-                    <li id="cp-li">Zusammengesetzte Wahrscheinlichkeit</li>
-                    <li id="pd-li" class="chapter-highlighted">Wahrscheinlichkeitsverteilungen</li>
-                    <li id="fi-li">Frequentistische Inferenz</li>
-                    <li id="bi-li">Bayes'sche Inferenz</li>
-                    <li id="ra-li">Regressionsanalyse</li>
+                    <li id="bp-li">Basic Probability</li>
+                    <li id="cp-li">Compound Probability</li>
+                    <li id="pd-li" class="chapter-highlighted">Probability Distributions</li>
+                    <li id="fi-li">Frequentist Inference</li>
+                    <li id="bi-li">Bayesian Inference</li>
+                    <li id="ra-li">Regression Analysis</li>
                 </ul>
             </div>
             <div class="modal-visualization">
                 <div id="bp">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/1-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Zufallsereignis </span>
+                        <span class="nav-unit-title-s"> Chance Event </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/1-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Erwartungswert </span>
+                        <span class="nav-unit-title-s"> Expectation </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/1-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Varianz </span>
+                        <span class="nav-unit-title-s"> Variance </span>
                     </div>
                 </div>
                 <div id="cp">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/2-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Mengenlehre </span>
+                        <span class="nav-unit-title-s"> Set Theory </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/2-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Kombinatorik </span>
+                        <span class="nav-unit-title-s"> Counting </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/2-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Bedingte Wahrscheinlichkeit </span>
+                        <span class="nav-unit-title-s"> Conditional Probability </span>
                     </div>
                 </div>
                 <div id="pd" class="current">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/3-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Zufallsvariable </span>
+                        <span class="nav-unit-title-s"> Random Variable </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/3-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Diskret und stetig </span>
+                        <span class="nav-unit-title-s"> Discrete and Continuous </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/3-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Zentraler Grenzwertsatz </span>
+                        <span class="nav-unit-title-s"> Central Limit Theorem </span>
                     </div>
                 </div>
                 <div id="fi">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/4-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Punktschätzung </span>
+                        <span class="nav-unit-title-s"> Point Estimation </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/4-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Konfidenzintervall </span>
+                        <span class="nav-unit-title-s"> Confidence Interval </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/4-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Bootstrap-Verfahren </span>
+                        <span class="nav-unit-title-s"> The Bootstrap </span>
                     </div>
                 </div>
                 <div id="bi">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/5-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Satz von Bayes </span>
+                        <span class="nav-unit-title-s"> Bayes' Theorem </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/5-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Likelihood-Funktion </span>
+                        <span class="nav-unit-title-s"> Likelihood Function </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/5-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Von der Priori- zur Posteriori-Verteilung </span>
+                        <span class="nav-unit-title-s"> Prior to Posterior </span>
                     </div>
                 </div>
                 <div id="ra">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/6-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Methode der kleinsten Quadrate </span>
+                        <span class="nav-unit-title-s"> Ordinary Least Squares </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/6-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Korrelation </span>
+                        <span class="nav-unit-title-s"> Correlation </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/6-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Varianzanalyse </span>
+                        <span class="nav-unit-title-s"> Analysis of Variance </span>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
@@ -10,13 +10,13 @@
     <!-- For Facebook Sharing -->
     <meta property="og:url" content="http://students.brown.edu/seeing-theory/compound-probability" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Compound Probability" />
-    <meta property="og:description" content="This chapter discusses further concepts that lie at the core of probability theory." />
+    <meta property="og:title" content="Zusammengesetzte Wahrscheinlichkeit" />
+    <meta property="og:description" content="Dieses Kapitel behandelt weitere Konzepte, die den Kern der Wahrscheinlichkeitstheorie bilden." />
     <meta property="og:image" content="http://students.brown.edu/seeing-theory/img/share/2.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <title>Seeing Theory - Compound Probability</title>
+    <title>Seeing Theory - Zusammengesetzte Wahrscheinlichkeit</title>
     <!-- CSS Imports -->
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
@@ -74,7 +74,7 @@
                     <span onclick="openNav()" id="hamburger">&#9776; </span>
                 </li>
                 <li><a href="../index.html" id="seeing-theory">Seeing Theory</a></li>
-                <li><a onclick='toTop()' id='display-chapter'>Chapter 2: Compound Probability</a></li>
+                <li><a onclick='toTop()' id='display-chapter'>Kapitel 2: Zusammengesetzte Wahrscheinlichkeit</a></li>
             </ul>
         </div>
     </div>
@@ -82,44 +82,44 @@
         <div class="col-left-wrapper">
             <div id="section0">
                 <div class="chapter-intro">
-                    <h4>Chapter 2</h4>
-                    <h1>Compound Probability</h1>
-                    <p>This chapter discusses further concepts that lie at the core of probability theory.
+                    <h4>Kapitel 2</h4>
+                    <h1>Zusammengesetzte Wahrscheinlichkeit</h1>
+                    <p>Dieses Kapitel behandelt weitere Konzepte, die den Kern der Wahrscheinlichkeitstheorie bilden.
                     </p>
                 </div>
                 <div class="scroll-down"> <img src="../img/button/bottom-arrow.svg"></div>
             </div>
             <div id="section1">
                 <div class="unit">
-                    <h3>Set Theory</h3>
-                    <p>A set, broadly defined, is a collection of objects. In the context of probability theory, we use set notation to specify compound events. For example, we can represent the event "roll an even number" by the set {2, 4, 6}. For this reason it is important to be familiar with the algebra of sets. </br></br>Use the set constructor below to build a set, then press "Submit" to see your set visualized in the Venn diagram. You can also move and resize the circles by dragging and dropping.</p>
+                    <h3>Mengenlehre</h3>
+                    <p>Eine Menge ist, grob gesagt, eine Zusammenfassung von Objekten. In der Wahrscheinlichkeitstheorie verwenden wir die Mengenschreibweise, um zusammengesetzte Ereignisse zu beschreiben. So können wir beispielsweise das Ereignis „eine gerade Zahl würfeln“ durch die Menge {2, 4, 6} darstellen. Deshalb ist es wichtig, mit der Mengenalgebra vertraut zu sein. </br></br>Baue mit dem Mengeneditor unten eine Menge zusammen und klicke dann auf „Bestätigen“, um deine Menge im Venn-Diagramm zu sehen. Du kannst die Kreise außerdem per Drag-and-drop verschieben und in der Größe verändern.</p>
                     <div class="interactive-wrapper">
                         <div id="setCalc">
-                            <div class="button-1-s setItem" title="A set">A</div>
-                            <div class="button-1-s setItem" title="B set">B</div>
-                            <div class="button-1-s setItem" title="C set">C</div>
-                            <div class="button-1-s setItem" title="empty set">&empty;</div>
-                            <div class="button-1-s setItem" title="universal set">U</div>
+                            <div class="button-1-s setItem" title="Menge A">A</div>
+                            <div class="button-1-s setItem" title="Menge B">B</div>
+                            <div class="button-1-s setItem" title="Menge C">C</div>
+                            <div class="button-1-s setItem" title="leere Menge">&empty;</div>
+                            <div class="button-1-s setItem" title="Grundmenge">U</div>
                             </br>
-                            <div class="button-1-s setItem" title="open parentheses">(</div>
-                            <div class="button-1-s setItem" title="intersection">&cap;</div>
-                            <div class="button-1-s setItem" title="union">&cup;</div>
-                            <div class="button-1-s setItem" title="complement">'</div>
-                            <div class="button-1-s setItem" title="close parentheses">)</div>
+                            <div class="button-1-s setItem" title="Klammer auf">(</div>
+                            <div class="button-1-s setItem" title="Schnittmenge">&cap;</div>
+                            <div class="button-1-s setItem" title="Vereinigung">&cup;</div>
+                            <div class="button-1-s setItem" title="Komplement">'</div>
+                            <div class="button-1-s setItem" title="Klammer zu">)</div>
                             <div class="form-control text-box" id="set"></div>
-                            <div class="button-1" id="submit">Submit</div>
-                            <div class="button-1" id="delete">Delete</div>
-                            <div class="button-1" id="reset">Reset</div>
+                            <div class="button-1" id="submit">Bestätigen</div>
+                            <div class="button-1" id="delete">Löschen</div>
+                            <div class="button-1" id="reset">Zurücksetzen</div>
                         </div>
                     </div>
                     <p class='text-center' id='invalidSet'></p>
-                    <p>You may wish to use the visualization to verify some of the following <a href='https://cs.brown.edu/courses/cs022/static/files/documents/sets.pdf'>set identities</a>.</p>
+                    <p>Mit der Visualisierung kannst du einige der folgenden <a href='https://cs.brown.edu/courses/cs022/static/files/documents/sets.pdf'>Mengenidentitäten</a> überprüfen.</p>
                 </div>
             </div>
             <div id="section2">
                 <div class="unit">
-                    <h3>Counting</h3>
-                    <p>It can be surprisingly difficult to count the number of sequences or sets satisfying certain conditions. For example, consider a bag of marbles in which each marble is a different color. If we draw marbles one at a time from the bag without replacement, how many different ordered sequences (permutations) of the marbles are possible? How many different unordered sets (combinations)?</p>
+                    <h3>Kombinatorik</h3>
+                    <p>Es kann überraschend schwierig sein, die Anzahl der Folgen oder Mengen zu bestimmen, die bestimmte Bedingungen erfüllen. Stell dir zum Beispiel einen Beutel mit Murmeln vor, in dem jede Murmel eine andere Farbe hat. Wenn wir die Murmeln nacheinander ohne Zurücklegen aus dem Beutel ziehen: Wie viele verschiedene geordnete Folgen (Permutationen) der Murmeln sind möglich? Und wie viele verschiedene ungeordnete Mengen (Kombinationen)?</p>
                     <div class="interactive-wrapper">
                         <label class="radio-inline">Permutation
                             <input type="radio" name="radioComb" checked="checked" value=false>
@@ -130,7 +130,7 @@
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <p> Choose how many marbles the bag should contain.</p>
+                    <p> Wähle aus, wie viele Murmeln der Beutel enthalten soll.</p>
                     <div class="interactive-wrapper">
                         <div id="sizeComb">
                         		<img class="button-1" src="./img/marble1.svg">
@@ -139,7 +139,7 @@
                         		<img class="button-1 active" src="./img/marble4.svg">
                         </div>
                     </div>
-                    <p> Click on the table below to visualize all possible permutations or combinations of the marbles.</p>
+                    <p> Klicke auf die Tabelle unten, um alle möglichen Permutationen oder Kombinationen der Murmeln darzustellen.</p>
                                      
                     <table id="count_table" style="cursor:pointer" class="table table-bordered">
                             <colgroup></colgroup>
@@ -174,32 +174,32 @@
             </div>
             <div id="section3">
                 <div class="unit">
-                    <h3>Conditional Probability</h3>
-                    <p>Conditional probabilities allow us to account for information we have about our system of interest. For example, we might expect the probability that it will rain tomorrow (in general) to be smaller than the probability it will rain tomorrow <em>given that it is cloudy today</em>. This latter probability is a conditional probability, since it accounts for relevant information that we possess.</p>
-                    <p>Mathematically, computing a conditional probability amounts to shrinking our sample space to a particular event. So in our rain example, instead of looking at how often it rains on any day in general, we "pretend" that our sample space consists of only those days for which the previous day was cloudy. We then determine how many of those days were rainy.</p>
-                    <p>Click on the tabs below to visualize the shrinking of the sample space.</p>
+                    <h3>Bedingte Wahrscheinlichkeit</h3>
+                    <p>Bedingte Wahrscheinlichkeiten erlauben es uns, Informationen zu berücksichtigen, die wir über das betrachtete System haben. So würden wir zum Beispiel erwarten, dass die Wahrscheinlichkeit, dass es morgen regnet (ganz allgemein), kleiner ist als die Wahrscheinlichkeit, dass es morgen regnet, <em>gegeben dass es heute bewölkt ist</em>. Letztere ist eine bedingte Wahrscheinlichkeit, da sie relevante Informationen einbezieht, über die wir verfügen.</p>
+                    <p>Mathematisch bedeutet die Berechnung einer bedingten Wahrscheinlichkeit, dass wir unseren Ergebnisraum auf ein bestimmtes Ereignis einschränken. In unserem Regenbeispiel schauen wir also nicht darauf, wie oft es an einem beliebigen Tag regnet, sondern wir „tun so“, als bestünde unser Ergebnisraum nur aus den Tagen, deren Vortag bewölkt war. Anschließend bestimmen wir, an wie vielen dieser Tage es geregnet hat.</p>
+                    <p>Klicke auf die Reiter unten, um die Verkleinerung des Ergebnisraums zu veranschaulichen.</p>
                     <div class="interactive-wrapper">
                         <div id="perspectiveControl">
                             </br>
                             <div class="button-1 perspective" id="a">A</div>
                             <div class="button-1 perspective" id="b">B</div>
                             <div class="button-1 perspective" id="c">C</div>
-                            <div class="button-1 perspective active" id="universe">Universe</div>
+                            <div class="button-1 perspective active" id="universe">Universum</div>
                         </div>
                         <div id='svgProbCP'></div>
                     </div>
-                    <p>This visualization was adapted from Victor Powell's fantastic visualization of <a href="http://setosa.io/conditional/">conditional probability</a>.</p>
+                    <p>Diese Visualisierung wurde nach Victor Powells großartiger Visualisierung der <a href="http://setosa.io/conditional/">bedingten Wahrscheinlichkeit</a> adaptiert.</p>
                 </div>
             </div>
         </div>
         <div class="action-buttons">
             <ul>
                 <a href="../doc/compound-probability.pdf">
-                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Download</span></li>
+                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Herunterladen</span></li>
                 </a>
                  <a id="share-button" >
 
-                    <li class="inline-share"><i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Share</li>
+                    <li class="inline-share"><i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Teilen</li>
                     
                     <li><div id="share-modal"></div></li>
 
@@ -209,8 +209,8 @@
         <a href="../probability-distributions/index.html">
             <div class="chapter-footer" id="next-chapter-color">
                 <div class="chapter-footer-wrapper">
-                    <h4>Next</h4>
-                    <p id='next-chapter'>Probability Distribution → </p>
+                    <h4>Weiter</h4>
+                    <p id='next-chapter'>Wahrscheinlichkeitsverteilungen → </p>
                 </div>
             </div>
         </a>
@@ -218,7 +218,8 @@
     <div class="col-right">
         <div class='language-setting'>
             <select class="languageSetting">
-                <option selected>English</option>
+                <option selected>Deutsch</option>
+                <option data-url="en.html">English</option>
                 <option data-url="cn.html">中文</option>
                 <option data-url="es.html">Español</option>
             </select>
@@ -226,15 +227,15 @@
         <div class="nav-section" id="section-0">
             <div class="nav-unit-wrapper" id='one'>
                 <img src="../img/tiles/2-1.png">
-                <span class="nav-unit-title"> Set Theory </span>
+                <span class="nav-unit-title"> Mengenlehre </span>
             </div>
             <div class="nav-unit-wrapper" id='two'>
                 <img src="../img/tiles/2-2.png">
-                <span class="nav-unit-title"> Counting </span>
+                <span class="nav-unit-title"> Kombinatorik </span>
             </div>
             <div class="nav-unit-wrapper" id='three'>
                 <img src="../img/tiles/2-3.png">
-                <span class="nav-unit-title"> Conditional Probability </span>
+                <span class="nav-unit-title"> Bedingte Wahrscheinlichkeit </span>
             </div>
         </div>
         <div class="visualization-section" id="section-1">
@@ -253,109 +254,110 @@
             <ul>
                 <li>
                     <select class="languageSetting">
-                        <option selected>English</option>
+                        <option selected>Deutsch</option>
+                        <option data-url="en.html">English</option>
                         <option data-url="cn.html">中文</option>
                         <option data-url="es.html">Español</option>
                     </select>
                 </li>
-                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html">STARTSEITE</a></li>
             </ul>
         </div>
         <div class="modal-wrapper">
             <div class="modal-chapter">
-                <div id="chapter-text"><span>CHAPTER</span></div>
+                <div id="chapter-text"><span>KAPITEL</span></div>
                 <ul class="modal-chapter-titles">
-                    <li id="bp-li">Basic Probability</li>
-                    <li id="cp-li" class="chapter-highlighted">Compound Probability</li>
-                    <li id="pd-li">Probability Distributions</li>
-                    <li id="fi-li">Frequentist Inference</li>
-                    <li id="bi-li">Bayesian Inference</li>
-                    <li id="ra-li">Regression Analysis</li>
+                    <li id="bp-li">Grundlagen der Wahrscheinlichkeit</li>
+                    <li id="cp-li" class="chapter-highlighted">Zusammengesetzte Wahrscheinlichkeit</li>
+                    <li id="pd-li">Wahrscheinlichkeitsverteilungen</li>
+                    <li id="fi-li">Frequentistische Inferenz</li>
+                    <li id="bi-li">Bayes'sche Inferenz</li>
+                    <li id="ra-li">Regressionsanalyse</li>
                 </ul>
             </div>
             <div class="modal-visualization">
                 <div id="bp">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/1-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Chance Event </span>
+                        <span class="nav-unit-title-s"> Zufallsereignis </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/1-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Expectation </span>
+                        <span class="nav-unit-title-s"> Erwartungswert </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/1-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Variance </span>
+                        <span class="nav-unit-title-s"> Varianz </span>
                     </div>
                 </div>
                 <div id="cp" class="current">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/2-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Set Theory </span>
+                        <span class="nav-unit-title-s"> Mengenlehre </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/2-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Counting </span>
+                        <span class="nav-unit-title-s"> Kombinatorik </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/2-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Conditional Probability </span>
+                        <span class="nav-unit-title-s"> Bedingte Wahrscheinlichkeit </span>
                     </div>
                 </div>
                 <div id="pd">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/3-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Random Variable </span>
+                        <span class="nav-unit-title-s"> Zufallsvariable </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/3-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Discrete and Continuous </span>
+                        <span class="nav-unit-title-s"> Diskret und stetig </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/3-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Central Limit Theorem </span>
+                        <span class="nav-unit-title-s"> Zentraler Grenzwertsatz </span>
                     </div>
                 </div>
                 <div id="fi">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/4-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Point Estimation </span>
+                        <span class="nav-unit-title-s"> Punktschätzung </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/4-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Confidence Interval </span>
+                        <span class="nav-unit-title-s"> Konfidenzintervall </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/4-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> The Bootstrap </span>
+                        <span class="nav-unit-title-s"> Bootstrap-Verfahren </span>
                     </div>
                 </div>
                 <div id="bi">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/5-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Bayes' Theorem </span>
+                        <span class="nav-unit-title-s"> Satz von Bayes </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/5-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Likelihood Function </span>
+                        <span class="nav-unit-title-s"> Likelihood-Funktion </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/5-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Prior to Posterior </span>
+                        <span class="nav-unit-title-s"> Von der Priori- zur Posteriori-Verteilung </span>
                     </div>
                 </div>
                 <div id="ra">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/6-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Ordinary Least Squares </span>
+                        <span class="nav-unit-title-s"> Methode der kleinsten Quadrate </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/6-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Correlation </span>
+                        <span class="nav-unit-title-s"> Korrelation </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/6-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Analysis of Variance </span>
+                        <span class="nav-unit-title-s"> Varianzanalyse </span>
                     </div>
                 </div>
             </div>

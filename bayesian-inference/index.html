@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
@@ -11,14 +11,14 @@
     <!-- For Facebook Sharing -->
     <meta property="og:url" content="http://students.brown.edu/seeing-theory/bayesian-inference/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Bayesian Inference" />
-    <meta property="og:description" content="Bayesian inference techniques specify how one should update one’s beliefs upon observing data." />
+    <meta property="og:title" content="Bayes'sche Inferenz" />
+    <meta property="og:description" content="Methoden der Bayes'schen Inferenz legen fest, wie man seine Überzeugungen aktualisieren sollte, sobald man Daten beobachtet." />
     <meta property="og:image" content="http://students.brown.edu/seeing-theory/img/share/5.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
 
-    <title>Seeing Theory - Bayesian Inference</title>
+    <title>Seeing Theory - Bayes'sche Inferenz</title>
     <!-- CSS Imports -->
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
@@ -76,7 +76,7 @@
                     <span onclick="openNav()" id="hamburger">&#9776; </span>
                 </li>
                 <li><a href="../index.html" id="seeing-theory"> Seeing Theory</a></li>
-                <li><a onclick='toTop()' id='display-chapter'>Chapter 5: Bayesian Inference</a></li>
+                <li><a onclick='toTop()' id='display-chapter'>Kapitel 5: Bayes'sche Inferenz</a></li>
             </ul>
         </div>
     </div>
@@ -84,33 +84,33 @@
         <div class="col-left-wrapper">
             <div id="section0">
                 <div class="chapter-intro">
-                    <h4>Chapter 5</h4>
-                    <h1>Bayesian Inference</h1>
-                    <p>Bayesian inference techniques specify how one should update one’s beliefs upon observing data.
+                    <h4>Kapitel 5</h4>
+                    <h1>Bayes'sche Inferenz</h1>
+                    <p>Methoden der Bayes'schen Inferenz legen fest, wie man seine Überzeugungen aktualisieren sollte, sobald man Daten beobachtet.
                     </p>
                 </div>
                 <div class="scroll-down"> <img src="../img/button/bottom-arrow.svg"></div>
             </div>
             <div id="section1">
                 <div class="unit">
-                    <h3>Bayes' Theorem</h3>
-                    <p>Suppose that on your most recent visit to the doctor's office, you decide to get tested for a rare disease. If you are unlucky enough to receive a positive result, the logical next question is, "Given the test result, what is the probability that I actually have this disease?" (Medical tests are, after all, not perfectly accurate.) Bayes' Theorem tells us exactly how to compute this probability:</p>
+                    <h3>Satz von Bayes</h3>
+                    <p>Angenommen, du lässt bei deinem letzten Arztbesuch einen Test auf eine seltene Krankheit machen. Wenn du das Pech hast, ein positives Ergebnis zu erhalten, lautet die naheliegende nächste Frage: „Wie wahrscheinlich ist es angesichts des Testergebnisses, dass ich diese Krankheit tatsächlich habe?“ (Medizinische Tests sind schließlich nicht perfekt genau.) Der Satz von Bayes sagt uns genau, wie wir diese Wahrscheinlichkeit berechnen:</p>
 
                     <span id="mathjax-5-1">$$P(\text{Disease}|+) = \frac{P(+|\text{Disease})P(\text{Disease})}{P(+)}$$</span>
-                    <p>As the equation indicates, the <em>posterior</em> probability of having the disease given that the test was positive depends on the <em>prior</em> probability of the disease \( P(\text{Disease}) \). Think of this as the incidence of the disease in the general population. Set this probability by dragging the bars below.</p>
+                    <p>Wie die Gleichung zeigt, hängt die <em>A-posteriori</em>-Wahrscheinlichkeit, die Krankheit zu haben, wenn der Test positiv ausgefallen ist, von der <em>A-priori</em>-Wahrscheinlichkeit der Krankheit \( P(\text{Disease}) \) ab. Du kannst sie dir als Häufigkeit der Krankheit in der Gesamtbevölkerung vorstellen. Lege diese Wahrscheinlichkeit fest, indem du die Balken unten ziehst.</p>
                     <div class="interactive-wrapper">
                         <div id="bayes_prior"></div>
                     </div>
-                    <p>The posterior probability also depends on the test accuracy: How often does the test correctly report a negative result for a healthy patient, and how often does it report a positive result for someone with the disease? Determine these two distributions below.</p>
+                    <p>Die A-posteriori-Wahrscheinlichkeit hängt außerdem von der Genauigkeit des Tests ab: Wie oft meldet der Test bei einem gesunden Patienten korrekt ein negatives Ergebnis, und wie oft meldet er bei jemandem mit der Krankheit ein positives Ergebnis? Lege diese beiden Verteilungen unten fest.</p>
                     <div id="bayes_likelihood"></div>
-                    <p>Finally, we need to know the overall probability of a positive result. Use the buttons below to simulate running the test on a representative sample from the population.</p>
+                    <p>Schließlich müssen wir die Gesamtwahrscheinlichkeit eines positiven Ergebnisses kennen. Mit den Schaltflächen unten kannst du simulieren, wie der Test an einer repräsentativen Stichprobe der Bevölkerung durchgeführt wird.</p>
                     <div class="interactive-wrapper">
-                        <div class="button-1" id="test_one">Test one patient</div>
-                        <div class="button-1" id="test_rest">Test Remaining</div>
+                        <div class="button-1" id="test_one">Einen Patienten testen</div>
+                        <div class="button-1" id="test_rest">Restliche testen</div>
                         <table id="marginal">
                             <tr>
-                                <th>Negative</th>
-                                <th>Positive</th>
+                                <th>Negativ</th>
+                                <th>Positiv</th>
                             </tr>
                             <tr>
                                 <td id="neg"></td>
@@ -118,70 +118,70 @@
                             </tr>
                         </table>
                     </div>
-                    <p>We now have everything we need to determine the posterior probability that you have the disease. The table below gives this probability among others using Bayes' Theorem.</p>
+                    <p>Jetzt haben wir alles, was wir brauchen, um die A-posteriori-Wahrscheinlichkeit zu bestimmen, dass du die Krankheit hast. Die Tabelle unten gibt diese Wahrscheinlichkeit – neben weiteren – mithilfe des Satzes von Bayes an.</p>
                     <div class="interactive-wrapper">
                         <table id="posterior">
                             <tr>
                                 <th></th>
-                                <th>Negative</th>
-                                <th>Positive</th>
+                                <th>Negativ</th>
+                                <th>Positiv</th>
                             </tr>
                             <tr>
-                                <th>Healthy</th>
+                                <th>Gesund</th>
                                 <td id="h_n"></td>
                                 <td id="h_p"></td>
                             </tr>
                             <tr>
-                                <th>Disease</th>
+                                <th>Krank</th>
                                 <td id="d_n"></td>
                                 <td id="d_p"></td>
                             </tr>
                         </table>
-                        <div class="button-1" id="sort">Sort</div>
-                        <div class="button-1" id="reset">Reset</div>
+                        <div class="button-1" id="sort">Sortieren</div>
+                        <div class="button-1" id="reset">Zurücksetzen</div>
                     </div>
                 </div>
             </div>
             <div id="section2">
                 <div class="unit">
-                    <h3>Likelihood Function</h3>
-                    <p>In statistics, the <em>likelihood function</em> has a very precise definition:</p><span id="mathjax-5-2">
+                    <h3>Likelihood-Funktion</h3>
+                    <p>In der Statistik hat die <em>Likelihood-Funktion</em> eine sehr präzise Definition:</p><span id="mathjax-5-2">
                     $$L(\theta | x) = P(x | \theta)$$</span>
-                    <p>The concept of likelihood plays a fundamental role in both Bayesian and frequentist statistics.</p>
+                    <p>Das Konzept der Likelihood spielt sowohl in der Bayes'schen als auch in der frequentistischen Statistik eine grundlegende Rolle.</p>
                     <div class="interactive-wrapper">
                         <select id="dist" class="st-dropdown">
-                            <option disabled selected> -- select a distribution -- </option>
-                            <option value="uniform">Uniform (0,&theta;)</option>
-                            <option value="normal">Normal (&theta;, 1)</option>
-                            <option value="exponential">Exponential (&theta;)</option>
-                            <option value="bernoulli">Bernoulli (&theta;)</option>
-                            <option value="binomialDiscrete">Binomial (3, &theta;)</option>
-                            <option value="poisson">Poisson (&theta;)</option>
-                            <option value="">Clear</option>
+                            <option disabled selected> -- Verteilung auswählen -- </option>
+                            <option value="uniform">Gleichverteilung (0,&theta;)</option>
+                            <option value="normal">Normalverteilung (&theta;, 1)</option>
+                            <option value="exponential">Exponentialverteilung (&theta;)</option>
+                            <option value="bernoulli">Bernoulli-Verteilung (&theta;)</option>
+                            <option value="binomialDiscrete">Binomialverteilung (3, &theta;)</option>
+                            <option value="poisson">Poisson-Verteilung (&theta;)</option>
+                            <option value="">Löschen</option>
                         </select>
                     </div>
-                    <p> Choose a sample size \(n\) and sample once from your chosen distribution.</p>
+                    <p> Wähle einen Stichprobenumfang \(n\) und ziehe einmal eine Stichprobe aus der gewählten Verteilung.</p>
                     <div class="interactive-wrapper">
                         <div class="st-slider">
                             <p> \(n\) = <span id="sample_size-value">1</span></p>
                             <input type="range" id="sample_size" min="1" max="20" step="1" value="1" class="blueSlider">
                         </div>
-                        <div id="sample" class="button-1">Sample</div>
+                        <div id="sample" class="button-1">Stichprobe ziehen</div>
                     </div>
-                    <p>Use the <span class="purple-color">purple</span> slider on the right to visualize the likelihood function.</p>
+                    <p>Verwende den <span class="purple-color">lila</span> Schieberegler rechts, um die Likelihood-Funktion zu visualisieren.</p>
                 </div>
             </div>
             <div id="section3">
                 <div class="unit">
-                    <h3>Prior to Posterior</h3>
-                    <p>At the core of Bayesian statistics is the idea that prior beliefs should be updated as new data is acquired. Consider a possibly biased coin that comes up heads with probability \(p\). This purple slider determines the value of \(p\) (which would be unknown in practice).</p>
+                    <h3>Von der Priori- zur Posteriori-Verteilung</h3>
+                    <p>Im Kern der Bayes'schen Statistik steht die Idee, dass A-priori-Überzeugungen aktualisiert werden sollten, sobald neue Daten vorliegen. Betrachte eine möglicherweise unfaire Münze, die mit Wahrscheinlichkeit \(p\) Kopf zeigt. Dieser lila Schieberegler legt den Wert von \(p\) fest (der in der Praxis unbekannt wäre).</p>
                     <div class="interactive-wrapper">
                         <div class="st-slider">
                             <p> \(p\) = <span id="p-value">0.5</span></p>
                             <input type="range" id="p" min="0" max="1" step="0.01" value="0.5" class="greenSlider">
                         </div>
                     </div>
-                    <p>The pink sliders control the shape of the initial \(\text{Beta}(\alpha, \beta)\) prior distribution, the density function of which is also plotted in pink.</p>
+                    <p>Die rosa Schieberegler steuern die Form der anfänglichen A-priori-Verteilung \(\text{Beta}(\alpha, \beta)\), deren Dichtefunktion ebenfalls in Rosa dargestellt ist.</p>
                     <div class="st-slider">
                         <p>\(\alpha\) = <span id="alpha-value">1</span></p>
                         <input type="range" id="alpha" min="0.01" max="5" step="0.01" value="1" class="blueSlider">
@@ -190,13 +190,13 @@
                         <p> \(\beta\) = <span id="beta-value">1</span></p>
                         <input type="range" id="beta" min="0.01" max="5" step="0.01" value="1" class="blueSlider">
                     </div>
-                    <p>As we acquire data in the form of coin tosses, we update the posterior distribution on \(p\), which represents our best guess about the likely values for the bias of the coin. This updated distribution then serves as the prior for future coin tosses.</p>
+                    <p>Während wir Daten in Form von Münzwürfen sammeln, aktualisieren wir die A-posteriori-Verteilung von \(p\). Sie stellt unsere beste Einschätzung der plausiblen Werte für die Verzerrung der Münze dar. Diese aktualisierte Verteilung dient dann als A-priori-Verteilung für die nächsten Münzwürfe.</p>
                     <div class="interactive-wrapper">
                         <div id="coinWrapper">
                             <div id="coin"></div>
                             <div id="coinButtons">
-                                <div class="button-1" id="flip_1">Flip the Coin</div>
-                                <div class="button-1" id="flip_10">Flip 10 times</div>
+                                <div class="button-1" id="flip_1">Münze werfen</div>
+                                <div class="button-1" id="flip_10">10-mal werfen</div>
                             </div>
                         </div>
                     </div>
@@ -205,14 +205,14 @@
 
                     <div id="coinWrapper2">
                         <div class="coin-img">
-                            <img src="./img/tail.png" alt="tail">
+                            <img src="./img/tail.png" alt="Zahl">
                         </div>
                         <div class="coin-text">
                             = <span id="tail"></span>
                         </div>
                 
                         <div class="coin-img">
-                            <img src="./img/head.png" alt="head">
+                            <img src="./img/head.png" alt="Kopf">
                         </div>
                         <div class="coin-text">
                             = <span id="head"></span>
@@ -226,11 +226,11 @@
         <div class="action-buttons">
             <ul>
                 <a href="../doc/bayesian-inference.pdf">
-                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Download</span></li>
+                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Herunterladen</span></li>
                 </a>
                 <a id="share-button" class="inline-share">
 
-                    <li><i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Share</li>
+                    <li><i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Teilen</li>
                     <li><div id="share"></div></li>
                     <li><div id="share-modal"></div></li>
 
@@ -240,8 +240,8 @@
         <a href="../regression-analysis/index.html">
             <div class="chapter-footer" id="next-chapter-color">
                 <div class="chapter-footer-wrapper">
-                    <h4>Next</h4>
-                    <p id='next-chapter'>Regression Analysis → </p>
+                    <h4>Weiter</h4>
+                    <p id='next-chapter'>Regressionsanalyse → </p>
                 </div>
             </div>
         </a>
@@ -249,7 +249,8 @@
     <div class="col-right">
         <div class='language-setting'>
             <select class="languageSetting">
-                <option selected>English</option>
+                <option selected>Deutsch</option>
+                <option data-url="en.html">English</option>
                 <option data-url="cn.html">中文</option>
                 <option data-url="es.html">Español</option>
             </select>
@@ -257,15 +258,15 @@
         <div class="nav-section" id="section-0">
             <div class="nav-unit-wrapper" id='one'>
                 <img src="../img/tiles/5-1.png">
-                <span class="nav-unit-title"> Bayes' Theorem </span>
+                <span class="nav-unit-title"> Satz von Bayes </span>
             </div>
             <div class="nav-unit-wrapper" id='two'>
                 <img src="../img/tiles/5-2.png">
-                <span class="nav-unit-title"> Likelihood Function </span>
+                <span class="nav-unit-title"> Likelihood-Funktion </span>
             </div>
             <div class="nav-unit-wrapper" id='three'>
                 <img src="../img/tiles/5-3.png">
-                <span class="nav-unit-title"> Prior to Posterior </span>
+                <span class="nav-unit-title"> Von der Priori- zur Posteriori-Verteilung </span>
             </div>
         </div>
         <div class="visualization-section" id="section-1">
@@ -284,109 +285,110 @@
             <ul>
                 <li>
                     <select class="languageSetting">
-                        <option selected>English</option>
+                        <option selected>Deutsch</option>
+                        <option data-url="en.html">English</option>
                         <option data-url="cn.html">中文</option>
                         <option data-url="es.html">Español</option>
                     </select>
                 </li>
-                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html">STARTSEITE</a></li>
             </ul>
         </div>
         <div class="modal-wrapper">
             <div class="modal-chapter">
-                <div id="chapter-text"><span>CHAPTER</span></div>
+                <div id="chapter-text"><span>KAPITEL</span></div>
                 <ul class="modal-chapter-titles">
-                    <li id="bp-li">Basic Probability</li>
-                    <li id="cp-li">Compound Probability</li>
-                    <li id="pd-li">Probability Distributions</li>
-                    <li id="fi-li">Frequentist Inference</li>
-                    <li id="bi-li" class="chapter-highlighted">Bayesian Inference</li>
-                    <li id="ra-li">Regression Analysis</li>
+                    <li id="bp-li">Grundlagen der Wahrscheinlichkeit</li>
+                    <li id="cp-li">Zusammengesetzte Wahrscheinlichkeit</li>
+                    <li id="pd-li">Wahrscheinlichkeitsverteilungen</li>
+                    <li id="fi-li">Frequentistische Inferenz</li>
+                    <li id="bi-li" class="chapter-highlighted">Bayes'sche Inferenz</li>
+                    <li id="ra-li">Regressionsanalyse</li>
                 </ul>
             </div>
             <div class="modal-visualization">
                 <div id="bp">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/1-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Chance Event </span>
+                        <span class="nav-unit-title-s"> Zufallsereignis </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/1-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Expectation </span>
+                        <span class="nav-unit-title-s"> Erwartungswert </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/1-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Variance </span>
+                        <span class="nav-unit-title-s"> Varianz </span>
                     </div>
                 </div>
                 <div id="cp">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/2-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Set Theory </span>
+                        <span class="nav-unit-title-s"> Mengenlehre </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/2-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Counting </span>
+                        <span class="nav-unit-title-s"> Kombinatorik </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/2-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Conditional Probability </span>
+                        <span class="nav-unit-title-s"> Bedingte Wahrscheinlichkeit </span>
                     </div>
                 </div>
                 <div id="pd">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/3-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Random Variable </span>
+                        <span class="nav-unit-title-s"> Zufallsvariable </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/3-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Discrete and Continuous </span>
+                        <span class="nav-unit-title-s"> Diskret und stetig </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/3-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Central Limit Theorem </span>
+                        <span class="nav-unit-title-s"> Zentraler Grenzwertsatz </span>
                     </div>
                 </div>
                 <div id="fi">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/4-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Point Estimation </span>
+                        <span class="nav-unit-title-s"> Punktschätzung </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/4-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Confidence Interval </span>
+                        <span class="nav-unit-title-s"> Konfidenzintervall </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/4-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> The Bootstrap </span>
+                        <span class="nav-unit-title-s"> Bootstrap-Verfahren </span>
                     </div>
                 </div>
                 <div id="bi" class="current">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/5-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Bayes' Theorem </span>
+                        <span class="nav-unit-title-s"> Satz von Bayes </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/5-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Likelihood Function </span>
+                        <span class="nav-unit-title-s"> Likelihood-Funktion </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/5-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Prior to Posterior </span>
+                        <span class="nav-unit-title-s"> Von der Priori- zur Posteriori-Verteilung </span>
                     </div>
                 </div>
                 <div id="ra">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/6-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Ordinary Least Squares </span>
+                        <span class="nav-unit-title-s"> Methode der kleinsten Quadrate </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/6-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Correlation </span>
+                        <span class="nav-unit-title-s"> Korrelation </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/6-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Analysis of Variance </span>
+                        <span class="nav-unit-title-s"> Varianzanalyse </span>
                     </div>
                 </div>
             </div>

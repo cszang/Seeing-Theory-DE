@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
@@ -10,15 +10,15 @@
     <!-- For Facebook Sharing -->
     <meta property="og:url" content="http://students.brown.edu/seeing-theory/basic-probability/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Basic Probability" />
-    <meta property="og:description" content="This chapter is an introduction to the basic concepts of probability theory." />
+    <meta property="og:title" content="Grundlagen der Wahrscheinlichkeit" />
+    <meta property="og:description" content="Dieses Kapitel ist eine Einführung in die Grundkonzepte der Wahrscheinlichkeitstheorie." />
     <meta property="og:image" content="http://students.brown.edu/seeing-theory/img/share/1.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
 
 
-    <title>Seeing Theory - Basic Probability</title>
+    <title>Seeing Theory - Grundlagen der Wahrscheinlichkeit</title>
     <!-- CSS Imports -->
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
@@ -78,7 +78,7 @@
                     <span onclick="openNav()" id="hamburger">&#9776; </span>
                 </li>
                 <li><a href="../index.html" id="seeing-theory">Seeing Theory</a></li>
-                <li><a onclick='toTop()' id='display-chapter'>Chapter 1: Basic Probability</a></li>
+                <li><a onclick='toTop()' id='display-chapter'>Kapitel 1: Grundlagen der Wahrscheinlichkeit</a></li>
             </ul>
         </div>
     </div>
@@ -86,9 +86,9 @@
         <div class="col-left-wrapper">
             <div id="section0">
                 <div class="chapter-intro">
-                    <h4>Chapter 1</h4>
-                    <h1>Basic Probability</h1>
-                    <p>This chapter is an introduction to the basic concepts of probability theory.
+                    <h4>Kapitel 1</h4>
+                    <h1>Grundlagen der Wahrscheinlichkeit</h1>
+                    <p>Dieses Kapitel ist eine Einführung in die Grundkonzepte der Wahrscheinlichkeitstheorie.
                     </p>
                 </div>
                 <div class="scroll-down"> <img src="../img/button/bottom-arrow.svg"></div>
@@ -96,58 +96,58 @@
             <div id="section1">
                 <div class="unit">
                     
-                        <h3 >Chance Events </h3>
+                        <h3 >Zufallsereignisse </h3>
                         
  
                     
-                    <p>Randomness is all around us. Probability theory is the mathematical framework that allows us to analyze chance events in a logically sound manner. The probability of an event is a number indicating how likely that event will occur. This number is always between 0 and 1, where 0 indicates impossibility and 1 indicates certainty.</p> 
-                    <p>A classic example of a probabilistic experiment is a fair coin toss, in which the two possible outcomes are heads or tails. In this case, the probability of flipping a head or a tail is 1/2. In an actual series of coin tosses, we may get more or less than exactly 50% heads. But as the number of flips increases, the long-run frequency of heads is bound to get closer and closer to 50%.</p>
+                    <p>Der Zufall begegnet uns überall. Die Wahrscheinlichkeitstheorie ist der mathematische Rahmen, der es uns erlaubt, zufällige Ereignisse logisch fundiert zu analysieren. Die Wahrscheinlichkeit eines Ereignisses ist eine Zahl, die angibt, wie wahrscheinlich das Eintreten dieses Ereignisses ist. Diese Zahl liegt stets zwischen 0 und 1, wobei 0 Unmöglichkeit und 1 Gewissheit bedeutet.</p> 
+                    <p>Ein klassisches Beispiel für ein Zufallsexperiment ist der Wurf einer fairen Münze, bei dem die beiden möglichen Ergebnisse Kopf oder Zahl sind. In diesem Fall beträgt die Wahrscheinlichkeit für Kopf oder Zahl jeweils 1/2. Bei einer tatsächlichen Serie von Münzwürfen kann der Anteil von Kopf mehr oder weniger als genau 50 % betragen. Mit zunehmender Anzahl an Würfen nähert sich die langfristige Häufigkeit von Kopf jedoch immer weiter 50 % an.</p>
                     <div class="interactive-wrapper">
                         <div id="coinWrapper">
                             <div id="coin"></div>
                             <div id="coinButtons">
-                                <div class="button-1" id="flipOne">Flip the Coin</div>
-                                <div class="button-1" id="flipHundred">Flip 100 times</div>
+                                <div class="button-1" id="flipOne">Münze werfen</div>
+                                <div class="button-1" id="flipHundred">100-mal werfen</div>
                             </div>
                         </div>
                     </div>
-                    <p> For an unfair or weighted coin, the two outcomes are not equally likely. You can change the weight or distribution of the coin by dragging the true probability bars (on the right in <span class="blue-color">blue</span>) up or down. If we assign numbers to the outcomes — say, 1 for heads, 0 for tails — then we have created the mathematical object known as a <a href="../probability-distributions/index.html#section1">random variable</a>.</p>
+                    <p> Bei einer unfairen oder gezinkten Münze sind die beiden Ergebnisse nicht gleich wahrscheinlich. Du kannst die Gewichtung bzw. Verteilung der Münze verändern, indem du die Balken der wahren Wahrscheinlichkeit (rechts in <span class="blue-color">blau</span>) nach oben oder unten ziehst. Wenn wir den Ergebnissen Zahlen zuordnen — etwa 1 für Kopf und 0 für Zahl — haben wir das mathematische Objekt geschaffen, das als <a href="../probability-distributions/index.html#section1">Zufallsvariable</a> bekannt ist.</p>
                 </div>
             </div>
             <div id="section2">
                 <div class="unit">
-                    <h3>Expectation</h3>
-                    <p>The expectation of a random variable is a number that attempts to capture the center of that random variable's distribution. It can be interpreted as the long-run average of many independent samples from the given distribution. More precisely, it is defined as the probability-weighted sum of all possible values in the random variable's support,</p>
+                    <h3>Erwartungswert</h3>
+                    <p>Der Erwartungswert einer Zufallsvariable ist eine Zahl, die versucht, das Zentrum der Verteilung dieser Zufallsvariable zu erfassen. Er lässt sich als der langfristige Durchschnitt vieler unabhängiger Stichproben aus der gegebenen Verteilung interpretieren. Genauer gesagt ist er definiert als die wahrscheinlichkeitsgewichtete Summe aller möglichen Werte im Träger der Zufallsvariable,</p>
                     <span id="centered">$$\text{E}[X] = \sum_{x \in \mathcal{X}}xP(x)$$</span>
-                    <p>Consider the probabilistic experiment of rolling a fair die and watch as the running sample mean converges to the expectation of 3.5.</p>
+                    <p>Betrachte das Zufallsexperiment des Würfelns mit einem fairen Würfel und beobachte, wie sich der laufende Stichprobenmittelwert dem Erwartungswert von 3,5 annähert.</p>
                     <div class="interactive-wrapper">
                     <div id="dieWrapper">
                         <div id="die"></div>
                         <div id="dieButtons">
-                            <div class="button-1" id="rollOne">Roll the Die</div>
-                            <div class="button-1" id="rollHundred">Roll 100 times</div>
+                            <div class="button-1" id="rollOne">Würfel werfen</div>
+                            <div class="button-1" id="rollHundred">100-mal würfeln</div>
                         </div>
                     </div></div>
-                    <p>Change the distribution of the different faces of the die (thus making the die biased or "unfair") by adjusting the <span class="blue-color">blue</span> bars below and observe how this changes the expectation.</p>
+                    <p>Verändere die Verteilung der einzelnen Würfelseiten (und mache den Würfel damit verzerrt bzw. „unfair“), indem du die <span class="blue-color">blauen</span> Balken unten anpasst, und beobachte, wie sich dadurch der Erwartungswert ändert.</p>
                     <div id="barDie"></div>
                 </div>
             </div>
             <div id="section3">
                 <div class="unit">
-                    <h3>Variance</h3>
-                    <p>Whereas expectation provides a measure of centrality, the variance of a random variable quantifies the spread of that random variable's distribution. The variance is the average value of the squared difference between the random variable and its expectation,</p>
+                    <h3>Varianz</h3>
+                    <p>Während der Erwartungswert ein Maß für die zentrale Lage liefert, quantifiziert die Varianz einer Zufallsvariable die Streuung ihrer Verteilung. Die Varianz ist der durchschnittliche Wert der quadrierten Differenz zwischen der Zufallsvariable und ihrem Erwartungswert,</p>
                     <span id="left-mathjax">$$\text{Var}(X) = \text{E}[(X - \text{E}[X])^2]$$</span>
-                    <p>Draw cards randomly from a deck of ten cards. As you continue drawing cards, observe that the running average of squared differences (in <span class="green-color">green</span>) begins to resemble the true variance (in <span class="blue-color">blue</span>).</p>
+                    <p>Ziehe zufällig Karten aus einem Stapel von zehn Karten. Während du weiter Karten ziehst, wirst du sehen, dass sich der laufende Durchschnitt der quadrierten Differenzen (in <span class="green-color">grün</span>) zunehmend der wahren Varianz (in <span class="blue-color">blau</span>) annähert.</p>
                     <div class="interactive-wrapper">
                         <div id="cardWrapper">
                             <div id="card"></div>
                             <div id="cardButtons">
-                                <div class="button-1" id="drawOne">Draw a Card</div>
-                                <div class="button-1" id="drawHundred">Draw 100 times</div>
+                                <div class="button-1" id="drawOne">Karte ziehen</div>
+                                <div class="button-1" id="drawHundred">100-mal ziehen</div>
                             </div>
                         </div>
                     </div>
-                    <p>Toggle which cards you want to include in the deck by clicking on them below.</p>
+                    <p>Wähle per Klick aus, welche Karten im Stapel unten enthalten sein sollen.</p>
                      <div class="interactive-wrapper">
                      </br>
                     <input type="checkbox" class="deck" id="card_one" value="1">
@@ -178,12 +178,12 @@
             
             <ul>
                 <a href="../doc/basic-probability.pdf">
-                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Download</span></li>
+                    <li><i class="fa fa-file-text-o action-icon" aria-hidden="true"></i> <span>Herunterladen</span></li>
                 </a>
                 <a id="share-button" >
 
                     <li class="inline-share">
-                        <i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Share
+                        <i class="fa fa-share-square-o action-icon" aria-hidden="true"></i>Teilen
                     </li>
                     <li><div id="share-modal"></div></li>
 
@@ -194,8 +194,8 @@
         <a href="../compound-probability/index.html">
             <div class="chapter-footer" id="next-chapter-color">
                 <div class="chapter-footer-wrapper">
-                    <h4>Next</h4>
-                    <p id='next-chapter'>Compound Probability → </p>
+                    <h4>Weiter</h4>
+                    <p id='next-chapter'>Zusammengesetzte Wahrscheinlichkeit → </p>
                 </div>
             </div>
         </a>
@@ -203,7 +203,8 @@
     <div class="col-right">
         <div class='language-setting'>
             <select class="languageSetting">
-                <option selected>English</option>
+                <option selected>Deutsch</option>
+                <option data-url="en.html">English</option>
                 <option data-url="cn.html">中文</option>
                 <option data-url="es.html">Español</option>
             </select>
@@ -211,15 +212,15 @@
         <div class="nav-section" id="section-0">
             <div class="nav-unit-wrapper" id='one'>
                 <img src="../img/tiles/1-1.png">
-                <span class="nav-unit-title"> Chance Events </span>
+                <span class="nav-unit-title"> Zufallsereignisse </span>
             </div>
             <div class="nav-unit-wrapper" id='two'>
                 <img src="../img/tiles/1-2.png">
-                <span class="nav-unit-title"> Expectation </span>
+                <span class="nav-unit-title"> Erwartungswert </span>
             </div>
             <div class="nav-unit-wrapper" id='three'>
                 <img src="../img/tiles/1-3.png">
-                <span class="nav-unit-title"> Variance </span>
+                <span class="nav-unit-title"> Varianz </span>
             </div>
         </div>
         <div class="visualization-section" id="section-1">
@@ -238,109 +239,110 @@
             <ul>
                 <li>
                     <select class="languageSetting">
-                        <option selected>English</option>
+                        <option selected>Deutsch</option>
+                        <option data-url="en.html">English</option>
                         <option data-url="cn.html">中文</option>
                         <option data-url="es.html">Español</option>
                     </select>
                 </li>
-                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html">STARTSEITE</a></li>
             </ul>
         </div>
         <div class="modal-wrapper">
             <div class="modal-chapter">
-                <div id="chapter-text"><span>CHAPTER</span></div>
+                <div id="chapter-text"><span>KAPITEL</span></div>
                 <ul class="modal-chapter-titles">
-                    <li id="bp-li" class="chapter-highlighted">Basic Probability</li>
-                    <li id="cp-li">Compound Probability</li>
-                    <li id="pd-li">Probability Distributions</li>
-                    <li id="fi-li">Frequentist Inference</li>
-                    <li id="bi-li">Bayesian Inference</li>
-                    <li id="ra-li">Regression Analysis</li>
+                    <li id="bp-li" class="chapter-highlighted">Grundlagen der Wahrscheinlichkeit</li>
+                    <li id="cp-li">Zusammengesetzte Wahrscheinlichkeit</li>
+                    <li id="pd-li">Wahrscheinlichkeitsverteilungen</li>
+                    <li id="fi-li">Frequentistische Inferenz</li>
+                    <li id="bi-li">Bayes'sche Inferenz</li>
+                    <li id="ra-li">Regressionsanalyse</li>
                 </ul>
             </div>
             <div class="modal-visualization">
                 <div id="bp" class="current">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/1-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Chance Event </span>
+                        <span class="nav-unit-title-s"> Zufallsereignis </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/1-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Expectation </span>
+                        <span class="nav-unit-title-s"> Erwartungswert </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/1-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Variance </span>
+                        <span class="nav-unit-title-s"> Varianz </span>
                     </div>
                 </div>
                 <div id="cp">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/2-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Set Theory </span>
+                        <span class="nav-unit-title-s"> Mengenlehre </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/2-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Counting </span>
+                        <span class="nav-unit-title-s"> Kombinatorik </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/2-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Conditional Probability </span>
+                        <span class="nav-unit-title-s"> Bedingte Wahrscheinlichkeit </span>
                     </div>
                 </div>
                 <div id="pd">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/3-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Random Variable </span>
+                        <span class="nav-unit-title-s"> Zufallsvariable </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/3-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Discrete and Continuous </span>
+                        <span class="nav-unit-title-s"> Diskret und stetig </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/3-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Central Limit Theorem </span>
+                        <span class="nav-unit-title-s"> Zentraler Grenzwertsatz </span>
                     </div>
                 </div>
                 <div id="fi">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/4-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Point Estimation </span>
+                        <span class="nav-unit-title-s"> Punktschätzung </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/4-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Confidence Interval </span>
+                        <span class="nav-unit-title-s"> Konfidenzintervall </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/4-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> The Bootstrap </span>
+                        <span class="nav-unit-title-s"> Bootstrap-Verfahren </span>
                     </div>
                 </div>
                 <div id="bi">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/5-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Bayes' Theorem </span>
+                        <span class="nav-unit-title-s"> Satz von Bayes </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/5-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Likelihood Function </span>
+                        <span class="nav-unit-title-s"> Likelihood-Funktion </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/5-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Prior to Posterior </span>
+                        <span class="nav-unit-title-s"> Von der Priori- zur Posteriori-Verteilung </span>
                     </div>
                 </div>
                 <div id="ra">
                     <div class="nav-unit-wrapper-s tile1">
                         <img src="../img/tiles/6-1.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Ordinary Least Squares </span>
+                        <span class="nav-unit-title-s"> Methode der kleinsten Quadrate </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile2">
                         <img src="../img/tiles/6-2.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Correlation </span>
+                        <span class="nav-unit-title-s"> Korrelation </span>
                     </div>
                     <div class="nav-unit-wrapper-s tile3">
                         <img src="../img/tiles/6-3.png" class="nav-unit-tile-s">
-                        <span class="nav-unit-title-s"> Analysis of Variance </span>
+                        <span class="nav-unit-title-s"> Varianzanalyse </span>
                     </div>
                 </div>
             </div>

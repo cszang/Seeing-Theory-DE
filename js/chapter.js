@@ -585,7 +585,9 @@ function langDetect() {
 
     var current_url;
 
-    if (a != "en") {
+    // Deutsch ist die Standardsprache (index.html), alle anderen Sprachen
+    // (en, cn, es) liegen als <lang>.html neben der index.html.
+    if (a != "de") {
         current_url =  a + ".html";
     } else {
         current_url = "index.html"
